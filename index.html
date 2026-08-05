@@ -1,4 +1,4 @@
-html_code = """<!DOCTYPE html>
+ """<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -430,6 +430,7 @@ html_code = """<!DOCTYPE html>
         .polaroid:nth-child(1) { transform: rotate(-5deg); }
         .polaroid:nth-child(2) { transform: rotate(3deg); }
         .polaroid:nth-child(3) { transform: rotate(-2deg); }
+        .polaroid:nth-child(4) { transform: rotate(4deg); }
 
         .polaroid:hover { transform: scale(1.08) rotate(0deg) !important; z-index: 50; box-shadow: 0 20px 40px rgba(0,0,0,0.9), 0 0 20px var(--blood-red); }
 
@@ -726,16 +727,20 @@ html_code = """<!DOCTYPE html>
         <div class="section-subtitle">عکس‌های ضمیمه شده</div>
         <section class="gallery-section reveal">
             <div class="polaroid">
-                <img src="IMG_20260805_113659_495.jpg" class="polaroid-img" alt="Sogol Memory 1">
+                <img src="IMG_20260805_113659_276.jpg" class="polaroid-img" alt="Sogol Memory 1">
                 <div class="polaroid-caption">مدرک الف // T-01</div>
             </div>
             <div class="polaroid">
-                <img src="IMG_20260805_113706_381.jpg" class="polaroid-img" alt="Sogol Memory 2">
+                <img src="IMG_20260805_113706_321.jpg" class="polaroid-img" alt="Sogol Memory 2">
                 <div class="polaroid-caption">مدرک ب // T-02</div>
             </div>
             <div class="polaroid">
-                <img src="IMG_20260805_113706_321.jpg" class="polaroid-img" alt="Sogol Memory 3">
+                <img src="IMG_20260805_113659_495.jpg" class="polaroid-img" alt="Sogol Memory 3">
                 <div class="polaroid-caption">مدرک ج // T-03</div>
+            </div>
+            <div class="polaroid">
+                <img src="IMG_20260805_113706_381.jpg" class="polaroid-img" alt="Sogol Memory 4">
+                <div class="polaroid-caption">مدرک د // T-04</div>
             </div>
         </section>
 
@@ -1132,9 +1137,5 @@ html_code = """<!DOCTYPE html>
         });
     </script>
 </body>
-</html>"""
-
-with open('Sogol_Winchester_Archive.html', 'w', encoding='utf-8') as f:
-    f.write(html_code)
-
-print("File generated successfully.")
+</html>
+"""
